@@ -1,0 +1,47 @@
+{
+  "name": "aes-cbc-helper",
+  "version": "0.0.3",
+  "type": "module",
+  "main": "./dist/aes-cbc-helper.es.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "browser": "./dist/browser/aes-cbc-helper.es.js",
+      "import": "./dist/aes-cbc-helper.es.js",
+      "require": "./dist/aes-cbc-helper.umd.js"
+    },
+    "./browser": {
+      "types": "./dist/types/browser/index.d.ts",
+      "import": "./dist/browser/aes-cbc-helper.es.js",
+      "require": "./dist/browser/aes-cbc-helper.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "build:node": "vite build && tsc -p tsconfig.build.json",
+    "build:browser": "vite build --config vite.browser.config.ts && tsc -p tsconfig.build.json",
+    "build": "pnpm build:node && pnpm build:browser",
+    "lint": "eslint . --fix --cache",
+    "format": "prettier --write src/"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.18.11",
+    "eslint": "^9.37.0",
+    "jiti": "^2.6.1",
+    "prettier": "3.6.2",
+    "typescript": "~5.9.0",
+    "vite": "7.2.4"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "scrypt-js": "^3.0.1"
+  }
+}
