@@ -1,6 +1,6 @@
 {
   "name": "aes-cbc-helper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "./dist/aes-cbc-helper.es.js",
   "types": "./dist/types/index.d.ts",
@@ -30,6 +30,14 @@
     "lint": "eslint . --fix --cache",
     "format": "prettier --write src/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TopFiveGao/aes-cbc-helper.git"
+  },
+  "author":{
+    "name":"TopFiveGao"
+  },
+  "license":"MIT",
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
     "@types/crypto-js": "^4.2.2",
