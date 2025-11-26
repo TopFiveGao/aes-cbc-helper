@@ -1,4 +1,4 @@
-# Aes-helper
+# Aes-cbc-helper
 
 基于 aes256cbc 算法实现的加密与解密算法，兼容浏览器端。
 

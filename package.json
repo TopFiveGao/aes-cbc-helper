@@ -1,6 +1,6 @@
 {
   "name": "aes-cbc-helper",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./dist/aes-cbc-helper.es.js",
   "types": "./dist/types/index.d.ts",
